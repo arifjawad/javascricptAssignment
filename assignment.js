@@ -36,22 +36,17 @@ function hotelCost(days) {
 }
 
 function megaFriend(){
-    var names=["abc","abdddcd","abcde"];
-  var x="a";
-    for(var i=0;i<names.length;i++){
-        var x=names[0];
-        var y=names[i];
-       var lenY= y.length;
-       var lenX=x.length;
-       if(lenX>lenY){
-            x=y;
-          }
-          else{
-              x=names[i];
-          }
+  var names=["abc","abcddddd","abcde"];
+
+var long=names[0];
+    for(var i=1;i<names.length;i++){
+      if(names[i].length>long.length){
+          long=names[i];
+      }
+                 
     }
     
-    return "largest Name is " + temp;
+    return "largest Name is " +long;
 }
 
 
