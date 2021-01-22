@@ -1,3 +1,5 @@
+//https://github.com/arifjawad/javascricptAssignment
+
 //Answer-1
 function kilometerToMeter(distance) {
     var converted = 0;
@@ -58,13 +60,20 @@ console.log(x);
 var watch= 50;
 var mobile=100;
 var laptop=500;
+if(watch<0 || mobile <0 || laptop<0 || watch=="" || mobile =="" || laptop ==""){
+    console.log("wrong input");
+}else{
 var total= budgetCalculator(watch,mobile,laptop);
 console.log(total);
-
+}
 //Answer-3
 var totaldays=21;
+if(totaldays<=0 || totaldays == ""){
+    console.log("wrong input");
+}else{
 var totalCost=hotelCost(totaldays);
 console.log(totalCost);
+}
 
 //Answer-4
 
